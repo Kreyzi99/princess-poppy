@@ -27,3 +27,15 @@
   });
 
 }());
+let audio = new Audio("sample.mp3");
+let count = 0;
+
+function playaudio(){
+  if (count==1){
+    return;
+  }
+  else {
+    audio.play();
+  }
+  count += 1;
+}
