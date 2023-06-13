@@ -35,10 +35,10 @@ body {
 
 
 #card-inside .wrap {
-    background: #b2bed5;
-    background-image: linear-gradient(top, #b2bed5 0%, #b2b6d5  100%);
-    background-image: -moz-linear-gradient(top, #b2bed5 0%, #b2b6d5  100%);
-    background-image: -webkit-linear-gradient(top, #b2bed5 0%, #b2b6d5  100%);
+    background: #ceb2d5;
+    background-image: linear-gradient(top, #ceb2d5 0%, #b2b6d5  100%);
+    background-image: -moz-linear-gradient(top, #ceb2d5 0%, #b2b6d5  100%);
+    background-image: -webkit-linear-gradient(top, #ceb2d5 0%, #b2b6d5  100%);
             transform-origin: left;
        -moz-transform-origin: left;
     -webkit-transform-origin: left;
