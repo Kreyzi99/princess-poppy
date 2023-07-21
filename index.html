@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Mathew</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Form Submit to Send Email</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="card">
-    <div id="card-inside">
-      <div class="wrap">
-        <p class="tosigned">Happy Birthday Mahal!</p> 
 
-        <p> Im always here for you, no matter what,
-        at kahit hindi ako ang NUMBER ONE FAN MO,
-        ako naman ang huling tao na papalakpak sa bawat tagumpay mo</p> 
-
-        <p>Mahal Kita Palagi</p>
-  
-    <p class="signed">K.I.Z</p>  
-        
-      </div>
+<div class="form-container">
+  <form action="contact.php" name="contactFormEmail" method="post">
+    <div class="input-row">
+      <label>Name <em>*</em></label> 
+      <input type="text" name="userName" required id="userName"> 
     </div>
-
-    <div id="card-front">
-
-      <div class="wrap">
-        <h1>Click the Button</h1>
-        <!-- <h1>Happy Birthday!</h1> -->
-      </div>
-      <button id="open" onclick="playaudio()">&gt;</button>
-      <button id="close">&lt;</button>
+    <div class="input-row">
+      <label>Email <em>*</em></label> 
+      <input type="email" name="userEmail" required id="userEmail"> 
     </div>
+    <div class="input-row">
+      <label>Phone <em>*</em></label> 
+      <input type="text" name="userPhone" required id="userPhone">
+    </div>
+    <div class="input-row">
+      <label>Message <em>*</em></label> 
+     <!-- <textarea name="userMessage" required id="userMessage"> -->
+    </div>
+    <div class="input-row">
+      <input type="submit" name="send" value="Submit">
+        <!-- if (! empty($message)) 
+        {
+            <div class='success'>
+                <strong><?php echo $message; ?>	</strong>
+              </div>
+        } -->
+      
+      
+    </div>
+  </form>
+</div>
 
-  </div>
-<!-- <audio ></audio> -->
-<!-- <audio controls autoplay><source src="sample.mp3" type="audio/mp3"></audio> -->
-
-  <script src="script.js"></script>
 </body>
 </html>
+
+
